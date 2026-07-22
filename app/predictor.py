@@ -6,7 +6,7 @@ import yfinance as yf
 import warnings
 warnings.filterwarnings("ignore")
 
-BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def compute_rsi(price_series, window=14):
     delta    = price_series.diff()
